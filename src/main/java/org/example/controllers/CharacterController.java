@@ -6,13 +6,11 @@ import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 
-import java.awt.*;
-
-@Path("/api/planets")
-public class PlantesController {
+@Path("/api/characters")
+public class CharacterController {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getPlanets() {
-        return Response.ok().entity("list of planets").build();
+    public Response getCharacters() {
+        return Response.ok("{\"characters\":[]}").build();
     }
 }

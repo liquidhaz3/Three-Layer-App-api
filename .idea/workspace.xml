@@ -5,18 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9706f41f-5fac-46de-8d85-1328b317ad7b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/PlantesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/threelayerappApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/threelayerappConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/CharacterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/daos/DatabaseConnector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/daos/PlanetsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Planets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/PlanetsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controllers/PlantesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/PlanetsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/threelayerappApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/threelayerappApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +31,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2pRpISN1A3MlreTYUKJfW9EM1EQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -47,17 +45,25 @@
     "Application.threelayerappApplication.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
     <configuration name="threelayerappApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="DB_USERNAME" value="root" />
+        <env name="DB_PASSWORD" value="Root1234" />
+        <env name="DB_HOST" value="localhost:3306" />
+        <env name="DB_DATABASE" value="swapi_db" />
+      </envs>
       <option name="MAIN_CLASS_NAME" value="org.example.threelayerappApplication" />
       <module name="ThreeLayerApp" />
       <option name="PROGRAM_PARAMETERS" value="server" />
@@ -93,7 +99,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1732738661736</updated>
-      <workItem from="1732738662756" duration="735000" />
+      <workItem from="1732738662756" duration="2344000" />
+      <workItem from="1733334968689" duration="6300000" />
     </task>
     <servers />
   </component>
