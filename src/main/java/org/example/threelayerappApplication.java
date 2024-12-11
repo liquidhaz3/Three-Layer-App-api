@@ -5,7 +5,9 @@ import io.dropwizard.core.setup.Bootstrap;
 import io.dropwizard.core.setup.Environment;
 import org.example.controllers.CharacterController;
 import org.example.controllers.PlanetsController;
+import org.example.daos.CharactersDao;
 import org.example.daos.PlanetsDao;
+import org.example.service.CharactersService;
 import org.example.service.PlanetsService;
 
 public class threelayerappApplication extends Application<threelayerappConfiguration> {
@@ -29,7 +31,7 @@ public class threelayerappApplication extends Application<threelayerappConfigura
                     final Environment environment) {
         // TODO: implement application
         environment.jersey().register(new PlanetsController(new PlanetsService(new PlanetsDao())));
-        environment.jersey().register(new CharacterController());
+        environment.jersey().register(new CharacterController(new CharactersService(new CharactersDao())));
     }
 
 }
