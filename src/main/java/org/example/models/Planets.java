@@ -1,11 +1,15 @@
 package org.example.models;
 
 public class Planets {
-    int id;
-    String name;
-    String climate;
-    long population;
+    private int id;
+    private String name;
+    private String climate;
+    private long population;
 
+    // Default constructor
+    public Planets() {}
+
+    // Parameterized constructor
     public Planets(int id, String name, String climate, long population) {
         this.id = id;
         this.name = name;
@@ -13,6 +17,7 @@ public class Planets {
         this.population = population;
     }
 
+    // Getters and Setters
     public int getId() {
         return id;
     }

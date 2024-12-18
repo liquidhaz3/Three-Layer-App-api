@@ -16,4 +16,20 @@ public class PlanetsService {
     public List<Planets> getAllPlanets() throws SQLException {
         return planetsDao.getAllPlanets();
     }
+
+    public Planets getPlanetById(int id) throws SQLException {
+        return planetsDao.getPlanetById(id);
+    }
+
+    public void createPlanet(Planets planet) throws SQLException {
+        planetsDao.createPlanet(planet);
+    }
+
+    public void updatePlanet(Planets planet) throws SQLException {
+        planetsDao.updatePlanet(planet);
+    }
+
+    public void deletePlanet(int id) throws SQLException {
+        planetsDao.deletePlanet(id);
+    }
 }
