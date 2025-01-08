@@ -1,68 +1,54 @@
 package org.example.models;
 
 public class Characters {
-
     private int id;
     private String name;
     private String species;
-    private int home_planet_id;
+    private int planet;
 
-    // Konstruktor łańcuchowy (name, species)
-    public Characters(String name, String species) {
-        this.name = name;
-        this.species = species;
+    public Characters() {
+        // Default constructor
     }
 
-    // Konstruktor łańcuchowy (name, species, home_planet_id)
-    public Characters(String name, String species, int home_planet_id) {
-        this.name = name;
-        this.species = species;
-        this.home_planet_id = home_planet_id;
-    }
-
-    // Konstruktor pełny (id, name, species, home_planet_id)
-    public Characters(int id, String name, String species, int home_planet_id) {
+    public Characters(int id, String name, String species, int planet) {
         this.id = id;
         this.name = name;
         this.species = species;
-        this.home_planet_id = home_planet_id;
+        this.planet = planet;
     }
 
-    // Gettery i settery
+    public Characters(String name, String species) {
+    }
+
     public int getId() {
         return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getSpecies() {
-        return species;
-    }
-
-    public int getHome_planet_id() {
-        return home_planet_id;
     }
 
     public void setId(int id) {
         this.id = id;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getSpecies() {
+        return species;
     }
 
     public void setSpecies(String species) {
         this.species = species;
     }
 
-    public void setHome_planet_id(int home_planet_id) {
-        this.home_planet_id = home_planet_id;
+    public int getPlanet() {
+        return planet;
     }
 
-    @Override
-    public String toString() {
-        return "Character: " + name + ", Species: " + species + ", Home Planet ID: " + home_planet_id;
+    public void setPlanet(int planet) {
+        this.planet = planet;
     }
 }

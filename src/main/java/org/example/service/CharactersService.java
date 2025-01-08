@@ -1,10 +1,8 @@
 package org.example.service;
 
 import org.example.daos.CharactersDao;
-import org.example.daos.PlanetsDao;
 import org.example.dtos.CharactersDTO;
 import org.example.models.Characters;
-import org.example.models.Planets;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -26,5 +24,21 @@ public class CharactersService {
 
     public List <Characters> getCharactersBySpecies(String species) throws SQLException {
         return charactersDao.getCharactersBySpecies(species);
+    }
+
+    public void createCharacter(Characters character) throws SQLException {
+        charactersDao.createCharacters(character);
+    }
+
+    public void updateCharacter(Characters character) throws SQLException {
+        charactersDao.updateCharacters(character);
+    }
+
+    public void deleteCharacter(int id) {
+        charactersDao.deleteCharacters(id);
+    }
+
+    public Characters getCharacterById(int id) {
+        return charactersDao.getCharacterById(id);
     }
 }

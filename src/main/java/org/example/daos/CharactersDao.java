@@ -85,4 +85,62 @@ public class CharactersDao {
                     .collect(Collectors.toList());
         }
     }
+
+    public void createCharacters(Characters character) throws SQLException {
+        try (Connection connection = DatabaseConnector.getConnection();
+             PreparedStatement statement = connection.prepareStatement(
+                     "INSERT INTO characters (name, species, home_planet_id) VALUES (?, ?, ?)")) {
+
+            statement.setString(1, character.getName());
+            statement.setString(2, character.getSpecies());
+            statement.setInt(3, character.getPlanet());
+            statement.executeUpdate();
+        }
+    }
+
+    public void updateCharacters(Characters character) throws SQLException {
+        try (Connection connection = DatabaseConnector.getConnection();
+             PreparedStatement statement = connection.prepareStatement(
+                     "UPDATE characters SET name = ?, species = ?, home_planet_id = ? WHERE id = ?")) {
+
+            statement.setString(1, character.getName());
+            statement.setString(2, character.getSpecies());
+            statement.setInt(3, character.getPlanet());
+            statement.setInt(4, character.getId());
+            statement.executeUpdate();
+        }
+    }
+
+    public void deleteCharacters(int id) {
+        try (Connection connection = DatabaseConnector.getConnection();
+             PreparedStatement statement = connection.prepareStatement("DELETE FROM characters WHERE id = ?")) {
+
+            statement.setInt(1, id);
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            System.err.println("Failed to delete character: " + e.getMessage());
+        }
+    }
+
+    public Characters getCharacterById(int id) {
+        Characters character = null;
+        try (Connection connection = DatabaseConnector.getConnection();
+             PreparedStatement statement = connection.prepareStatement("SELECT * FROM characters WHERE id = ?")) {
+
+            statement.setInt(1, id);
+            ResultSet resultSet = statement.executeQuery();
+
+            if (resultSet.next()) {
+                character = new Characters(
+                        resultSet.getInt("id"),
+                        resultSet.getString("name"),
+                        resultSet.getString("species"),
+                        resultSet.getInt("home_planet_id")
+                );
+            }
+        } catch (SQLException e) {
+            System.err.println("Failed to get character by ID: " + e.getMessage());
+        }
+        return character;
+    }
 }

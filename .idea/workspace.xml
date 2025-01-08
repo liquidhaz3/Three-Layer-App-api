@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9706f41f-5fac-46de-8d85-1328b317ad7b" name="Changes" comment="Added DTO, extended queries and STREAM functionalities with JOINs">
+    <list default="true" id="9706f41f-5fac-46de-8d85-1328b317ad7b" name="Changes" comment="security fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controllers/PlanetsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/PlanetsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/daos/DatabaseConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/daos/DatabaseConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/daos/PlanetsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/daos/PlanetsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Planets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Planets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/PlanetsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/PlanetsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controllers/CharacterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/CharacterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/daos/CharactersDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/daos/CharactersDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Characters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Characters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/CharactersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/CharactersService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +26,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="bb09d864-1587-4d2a-942e-6b67d202d8a6" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -43,7 +44,9 @@
     &quot;JUnit.PlanetsDaoTest.executor&quot;: &quot;Run&quot;,
     &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -105,8 +108,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.19416.15" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.19416.15" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
       </set>
     </attachedChunks>
   </component>
@@ -126,6 +129,10 @@
       <workItem from="1733950829756" duration="2844000" />
       <workItem from="1733953684160" duration="281000" />
       <workItem from="1734548591732" duration="5610000" />
+      <workItem from="1734554210039" duration="467000" />
+      <workItem from="1735850383668" duration="67000" />
+      <workItem from="1735850515732" duration="2035000" />
+      <workItem from="1736363289875" duration="3962000" />
     </task>
     <task id="LOCAL-00001" summary="Created database connector and first dao patterns">
       <option name="closed" value="true" />
@@ -183,7 +190,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733953695688</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added RESTful endpoints for planets">
+      <option name="closed" value="true" />
+      <created>1734554349330</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1734554349330</updated>
+    </task>
+    <task id="LOCAL-00009" summary="security fix">
+      <option name="closed" value="true" />
+      <created>1734554580244</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1734554580244</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,24 +226,26 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created database connector and first dao patterns" />
     <MESSAGE value="Added DTO, extended queries and STREAM functionalities with JOINs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added DTO, extended queries and STREAM functionalities with JOINs" />
+    <MESSAGE value="Added RESTful endpoints for planets" />
+    <MESSAGE value="security fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="security fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/service/CharactersService.java</url>
-          <line>15</line>
+          <line>13</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/service/CharactersService.java</url>
-          <line>23</line>
+          <line>21</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/service/CharactersService.java</url>
-          <line>27</line>
+          <line>25</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
