@@ -7,6 +7,7 @@ import org.example.controllers.CharacterController;
 import org.example.controllers.PlanetsController;
 import org.example.daos.CharactersDao;
 import org.example.daos.PlanetsDao;
+import org.example.filters.CorsFilter;
 import org.example.service.CharactersService;
 import org.example.service.PlanetsService;
 
@@ -32,6 +33,9 @@ public class threelayerappApplication extends Application<threelayerappConfigura
         // TODO: implement application
         environment.jersey().register(new PlanetsController(new PlanetsService(new PlanetsDao())));
         environment.jersey().register(new CharacterController(new CharactersService(new CharactersDao())));
+
+        environment.servlets().addFilter("CorsFilter", CorsFilter.class)
+                .addMappingForUrlPatterns(null, false, "/*");
     }
 
 }

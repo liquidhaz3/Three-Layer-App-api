@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9706f41f-5fac-46de-8d85-1328b317ad7b" name="Changes" comment="security fix">
+    <list default="true" id="9706f41f-5fac-46de-8d85-1328b317ad7b" name="Changes" comment="completed CRUD endpoints, minor fixes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/filters/CorsFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controllers/CharacterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/CharacterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/daos/CharactersDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/daos/CharactersDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Characters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Characters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/CharactersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/CharactersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/threelayerappApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/threelayerappApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +130,11 @@
       <workItem from="1734554210039" duration="467000" />
       <workItem from="1735850383668" duration="67000" />
       <workItem from="1735850515732" duration="2035000" />
-      <workItem from="1736363289875" duration="3962000" />
+      <workItem from="1736363289875" duration="5354000" />
+      <workItem from="1739390903799" duration="2259000" />
+      <workItem from="1741187339942" duration="631000" />
+      <workItem from="1741196524820" duration="961000" />
+      <workItem from="1741202699674" duration="604000" />
     </task>
     <task id="LOCAL-00001" summary="Created database connector and first dao patterns">
       <option name="closed" value="true" />
@@ -206,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734554580244</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="completed CRUD endpoints, minor fixes">
+      <option name="closed" value="true" />
+      <created>1736367574024</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1736367574024</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,7 +238,8 @@
     <MESSAGE value="Added DTO, extended queries and STREAM functionalities with JOINs" />
     <MESSAGE value="Added RESTful endpoints for planets" />
     <MESSAGE value="security fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="security fix" />
+    <MESSAGE value="completed CRUD endpoints, minor fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed CRUD endpoints, minor fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
