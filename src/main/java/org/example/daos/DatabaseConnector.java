@@ -27,7 +27,7 @@ public class DatabaseConnector {
 
         try {
             connection = DriverManager.getConnection(
-                    "jdbc:mysql://" + host + "/" + database + "?useSSL=false",
+                    "jdbc:mysql://" + host + "/" + database + "?allowPublicKeyRetrieval=true&useSSL=false",
                     username,
                     password
             );

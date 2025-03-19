@@ -5,9 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9706f41f-5fac-46de-8d85-1328b317ad7b" name="Changes" comment="completed CRUD endpoints, minor fixes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/filters/CorsFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controllers/CharacterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/CharacterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controllers/PlanetsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/PlanetsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/daos/CharactersDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/daos/CharactersDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/daos/DatabaseConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/daos/DatabaseConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/daos/PlanetsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/daos/PlanetsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dtos/CharactersDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dtos/CharactersDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/filters/CorsFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/filters/CorsFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Characters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Characters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Planets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Planets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/CharactersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/CharactersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/PlanetsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/PlanetsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/threelayerappApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/threelayerappApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/threelayerappConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/threelayerappConfiguration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +35,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;liquidhaz3&quot;
+  }
+}</component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="bb09d864-1587-4d2a-942e-6b67d202d8a6" />
   </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/liquidhaz3/Three-Layer-App-api.git&quot;,
+    &quot;accountId&quot;: &quot;9be5cb6f-c8f3-4881-b3ab-4ee558df6022&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -106,8 +129,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.59" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.25659.59" />
       </set>
     </attachedChunks>
   </component>
@@ -135,6 +158,10 @@
       <workItem from="1741187339942" duration="631000" />
       <workItem from="1741196524820" duration="961000" />
       <workItem from="1741202699674" duration="604000" />
+      <workItem from="1741387944924" duration="314000" />
+      <workItem from="1741390481358" duration="70000" />
+      <workItem from="1742412773155" duration="125000" />
+      <workItem from="1742412923919" duration="311000" />
     </task>
     <task id="LOCAL-00001" summary="Created database connector and first dao patterns">
       <option name="closed" value="true" />
