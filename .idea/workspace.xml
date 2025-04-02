@@ -4,21 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9706f41f-5fac-46de-8d85-1328b317ad7b" name="Changes" comment="completed CRUD endpoints, minor fixes">
+    <list default="true" id="9706f41f-5fac-46de-8d85-1328b317ad7b" name="Changes" comment="Added product factory for laptop, desktop, monitor with endpoints">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/daos/ProductDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dtos/ProductDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/factories/ProductFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Desktop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Laptop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Monitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/ProductServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controllers/CharacterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/CharacterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controllers/PlanetsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/PlanetsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/daos/CharactersDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/daos/CharactersDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/daos/DatabaseConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/daos/DatabaseConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/daos/PlanetsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/daos/PlanetsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dtos/CharactersDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dtos/CharactersDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/filters/CorsFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/filters/CorsFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Characters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Characters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Planets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Planets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/CharactersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/CharactersService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/PlanetsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/PlanetsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/threelayerappApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/threelayerappApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/threelayerappConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/threelayerappConfiguration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +38,6 @@
     &quot;assignee&quot;: &quot;liquidhaz3&quot;
   }
 }</component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="bb09d864-1587-4d2a-942e-6b67d202d8a6" />
-  </component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/liquidhaz3/Three-Layer-App-api.git&quot;,
@@ -129,8 +123,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.59" />
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.25659.59" />
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
       </set>
     </attachedChunks>
   </component>
@@ -161,7 +155,11 @@
       <workItem from="1741387944924" duration="314000" />
       <workItem from="1741390481358" duration="70000" />
       <workItem from="1742412773155" duration="125000" />
-      <workItem from="1742412923919" duration="311000" />
+      <workItem from="1742412923919" duration="2154000" />
+      <workItem from="1743016224982" duration="1314000" />
+      <workItem from="1743017699978" duration="650000" />
+      <workItem from="1743018356059" duration="1351000" />
+      <workItem from="1743619328146" duration="4204000" />
     </task>
     <task id="LOCAL-00001" summary="Created database connector and first dao patterns">
       <option name="closed" value="true" />
@@ -243,7 +241,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736367574024</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added product factory for laptop, desktop, monitor with endpoints">
+      <option name="closed" value="true" />
+      <created>1742414271055</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1742414271055</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,7 +272,8 @@
     <MESSAGE value="Added RESTful endpoints for planets" />
     <MESSAGE value="security fix" />
     <MESSAGE value="completed CRUD endpoints, minor fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed CRUD endpoints, minor fixes" />
+    <MESSAGE value="Added product factory for laptop, desktop, monitor with endpoints" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added product factory for laptop, desktop, monitor with endpoints" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
